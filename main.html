@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <title> Econ... </title>
+  <meta charset='utf-8'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="icon" href="imgs/pix/5ealm.gif">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script src="https://static.tumblr.com/lspzyz3/xloqk6cgp/jquery.style-my-tooltips.js"></script>
+  <style>
+      html {
+        display: inline-block;
+  overflow-y: hidden;
+  cursor: default; min-height: 90vh; background-color: #ffffff; background-image: url(https://media.istockphoto.com/id/1198334973/vector/falling-american-dollar-bills-seamless-pattern-on-white-background.jpg?s=612x612&w=0&k=20&c=YmRnfuNww1Mn6Ezy7_sWWJHx113BfDxsDWyRaVMhAN0=);
+  }
+  body {
+      height: 40em; width: 70em; 
+      margin-top: 15px; overflow: auto; 
+      margin-left: auto; padding: 10px;
+      margin-right: auto;
+     }
+     .main {
+      background-color: #fff9e7; height: 35em; width: 58em; border: #0e8802 3px dashed;
+      overflow-y: scroll; overflow-x: hidden; position: absolute; 
+      margin-left: 8em; padding: 10px; margin-top: 55px; padding-top: 20px;
+      
+
+     }
+      .loader-wrapper {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #ffffff; z-index: 99;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .loader {
+        display: inline-block;
+        position: relative;
+        border: 4px solid rgba(255, 255, 255, 0);
+        animation: loader 2s infinite ease;
+      }
+  
+  @font-face {
+      font-family:"lgo";
+      src: url(https://dl.dropbox.com/s/fbtv3gld4hkabrh/Cocogoose%20Pro-trial.ttf?dl=0);
+  }
+  @font-face {
+      font-family: "header";
+      src: url(https://dl.dropbox.com/s/hwevhnaqfdc44ww/FredokaOne-Regular.ttf?dl=0);
+  }
+  @font-face {
+      font-family: "menu";
+      src: url(https://dl.dropbox.com/s/nllb8q8irzspdwh/crayon%20kids.ttf?dl=0);
+  }
+  @font-face {
+      font-family: "pan";
+      src: url(https://dl.dropbox.com/s/53szs8eywfimz43/HelveticaNeue-Regular.otf?dl=0);
+  }
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #000000 #000000;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 7px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #fff9e7;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #047a2b;
+    border-radius: 0px;
+  }
+
+  .menu {
+      border: 4px solid #f7c72c; padding: 10px; z-index: 0; border-radius: 15px; padding-top: 15px;
+      width: 140px; height: 155px; line-height: 30px; margin-top: 5em; z-index: 0;
+      background-color: #05490e; position: absolute; float: left; margin-left: 12px;
+  }
+
+  .menu a{
+       color: #fdfdfd; line-break: strict; 
+       text-decoration: none; font-size: 20px; font-family: menu;
+  }
+  a.wow:link { text-decoration: none; }
+ 
+a.wow::before {
+transform: scaleX(0);
+transform-origin: bottom right;
+}
+ 
+a.wow:hover::before {
+transform: scaleX(1);
+transform-origin: bottom left;
+}
+ 
+a.wow::before {
+content: " ";
+display: block;
+position: absolute;
+top: 0; right: 0; bottom: 0; left: 0;
+inset: 0 0 0 0;
+background: #05490e;
+z-index: 1;
+transition: transform .5s ease;
+}
+ 
+a.wow {
+    position: relative;
+}
+  #mainnn {
+      background-color: #fff9e7; position: absolute;
+      width: 57em; height: 41em; padding: 5px; padding-top: 20px; overflow: hidden;
+  }
+
+  #econ1 {
+      background-color: #fff9e7; position: absolute;
+      width: 58em; height: 42em; 
+  }
+  #econ2 {
+      background-color: #fff9e7; position: absolute;
+      width: 58em; height: 42em; 
+  }
+  #s-m-t-tooltip{
+	/* basic */
+	max-width: 300px;
+	z-index: 10;
+	margin: 10px 5px 6px 5px;
+	/* style and design */
+	padding:8px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+    background: black;
+	color: white;
+}
+  
+.head {
+    position: absolute; left: 10px; top: 10px;
+    width: 780px; height: 100px; 
+}
+  </style>
+</head>
+<body>
+    <div class="head">
+        <img style="width: 60px; transform: rotate(30deg); position: relative; float: left;" src="https://media0.giphy.com/media/fjypbJR1Dh1mqUxUJE/200w.gif?cid=82a1493bavlwhr9fnknsyo70zcv3damlqw3urmjs1rt5zzi9&ep=v1_gifs_related&rid=200w.gif&ct=s">
+        <p style="text-shadow: #000000 1px 0 2px; font-family: lgo; color: #127e03; font-size: 48px; margin-top: 5px; line-break: none;"> Personal Finance: A Guide </p>
+    </div>
+    <div class="menu">
+        <a class="wow" href="#mainnn"> Main Page </a> <br>
+        <a class="wow"href="#econ1"> Saving </a> <br>
+        <a class="wow"href="#econ2"> Investing </a> <br>
+        <a class="wow"href="#econ2"> Credit </a> <br>
+        <a class="wow"href="#econ2"> Sources </a> <br>
+    </div>
+
+    <div class="main">
+        <div id="mainnn">
+            <h1 style="margin-top: -10px; margin-left: -3px; font-family: header;"> What is Economics? </h1>
+            <!-- In between the <p> it holds texts. If you want to change the text inside just type it like a word document and hit save.-->
+            <p style="margin-top: -18px; font-family: pan; font-size: 15px;"> Jelly-o chocolate pastry pudding jujubes caramels jelly-o halvah halvah. Marshmallow I love gummies cookie marzipan I love tootsie roll I love <span style="text-decoration:underline dashed; cursor: pointer; color: #178ac9;" data-toggle="tooltip" title="This is where you insert the tooltip text" class=""> tart.</span> I love cupcake cake toffee cookie jelly beans chocolate bar caramels toffee. Jelly I love I love topping dessert gummi bears. Liquorice carrot cake carrot cake fruitcake pastry gummi bears sweet roll halvah. Bonbon sugar plum cake I love chupa chups brownie. Pie chocolate marzipan sweet bonbon. <br><br>
+                I love gingerbread icing pie I love icing. Dragée pudding I love chupa chups pastry chupa chups jujubes tiramisu. Sesame snaps I love caramels bonbon brownie. Chupa chups sugar plum icing sweet roll cupcake sweet I love. Gummies icing chocolate cake I love cotton candy. Jelly-o gummi bears gingerbread oat cake tart gingerbread I love. Croissant muffin candy canes brownie cupcake I love muffin. Marshmallow chupa chups marzipan bear claw croissant jelly-o biscuit. 
+            </p>
+            <img style="width: 200px; position: relative; float: left; margin-right: 7px;" src="https://i.pinimg.com/564x/fd/f3/08/fdf3080a6234f81b95ce0f791cdcd77b.jpg">
+            <p style="color: #63acf1; margin-bottom: 40px; margin-top: 18px; font-family: pan;font-size: 15px;"> Donut jujubes lemon drops topping pie pastry. Jelly beans I love I love muffin jelly halvah jelly-o cookie croissant. Shortbread fruitcake candy bonbon soufflé. Chupa chups carrot cake gummies lollipop lemon drops danish. Chocolate powder cake I love topping dragée. Caramels tiramisu pudding I love jelly donut carrot cake. <br><br>
+            Dessert tart sesame snaps jelly beans shortbread liquorice oat cake. Macaroon chocolate liquorice oat cake dragée. Cupcake candy I love tiramisu cheesecake chocolate cookie. Halvah I love jelly-o danish dragée cookie. Candy canes macaroon macaroon toffee donut ice cream pie candy I love. Caramels ice cream sweet roll oat cake cake cookie I love. Marshmallow I love I love muffin jelly beans jujubes tiramisu sesame snaps. Icing soufflé cookie I love oat cake halvah. Wafer jelly beans pastry croissant I love. 
+            </p>
+            <img style="width: 200px; position: relative; float: right; margin-left: 8px;" src="https://i.pinimg.com/564x/70/41/d6/7041d6671d9d1c8e1507ea2e3f584f4d.jpg">
+            <p style="color: #b40606; margin-top: 3em; font-family: pan;font-size: 15px;"> Donut jujubes lemon drops topping pie pastry. Jelly beans I love I love muffin jelly halvah jelly-o cookie croissant. Shortbread fruitcake candy bonbon soufflé. Chupa chups carrot cake gummies lollipop lemon drops danish. Chocolate powder cake I love topping dragée. Caramels tiramisu pudding I love jelly donut carrot cake. <br><br>
+                Dessert tart sesame snaps jelly beans shortbread liquorice oat cake. Macaroon chocolate liquorice oat cake dragée. Cupcake candy I love tiramisu cheesecake chocolate cookie. Halvah I love jelly-o danish dragée cookie. Candy canes macaroon macaroon toffee donut ice cream pie candy I love. Caramels ice cream sweet roll oat cake cake cookie I love. Marshmallow I love I love muffin jelly beans jujubes tiramisu sesame snaps. Icing soufflé cookie I love oat cake halvah. Wafer jelly beans pastry croissant I love.
+            </p>
+                
+        </div>
+        <div class="cont" id="econ1">
+            <p> hello </p>
+
+        </div>
+        <div class="cont" id="econ2">
+            <p> hello </p>
+
+        </div>
+    </div>
+</body>
+<script>
+    jQuery(document).ready(function($) {
+$('.cont') .hide()
+$('a[href^="#"]').on('click', function(event) {
+$('.cont') .hide()
+  var target = $(this).attr('href');
+
+  $('.cont'+target).toggle();
+
+});
+});
+</script>
+<script>
+    (function($){
+    $(document).ready(function(){
+    $("[title]").style_my_tooltips({
+    tip_follows_cursor: true,
+    tip_delay_time:100,
+    tip_fade_speed:300,
+    attribute:"title"
+    });
+    });
+    })(jQuery);
+</script>
+</html>
